@@ -70,7 +70,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
                                 {steps === 1 ?
                                     <>
-                                        <Dialog.Panel className="w-full h-[606px] max-w-[624px] transform overflow-hidden rounded-2xl bg-white pl-8 pt-1 pr-1.5 pb-8 text-left align-middle shadow-xl transition-all text-gray-100">
+                                        <Dialog.Panel className="w-full h-[606px] max-w-[624px] transform overflow-hidden rounded-2xl bg-white p-8 text-left align-middle shadow-xl transition-all text-gray-100">
                                             <div className='flex justify-end ' >
                                                 <Close />
                                             </div>

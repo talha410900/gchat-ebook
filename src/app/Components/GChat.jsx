@@ -23,7 +23,7 @@ function GChat() {
           <div className='flex flex-col md:flex-row justify-between lg:pl-[130px]'>
             <div className='mt-[89px] lg:w-[670px]'>
               <Image src='/images/logo.svg' width={100} height={100} />
-              <h1 className='text-2xl lg:text-[57px]  font-inter font-bold  text-white mt-[76px] leading-normal'>
+              <h1 className='text-2xl lg:text-[57px]  font-inter font-bold  text-white mt-[76px] leading-[1.15]'>
                 Viete už, ako využiť
                 <br />
                 <span className='underline'> UMELÚ INTELIGENCIU</span>

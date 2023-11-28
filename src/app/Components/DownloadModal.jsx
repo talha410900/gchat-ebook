@@ -231,11 +231,12 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 </Dialog.Title>
                                                 <p className='mt-4  text-[10px] md:text-sm lg:text-base'>Spolu s E-Bookum <span className='font-semibold'>ste získali ZDARMA 30 min konzultáciu s našim odborníkon na umelú inteligenciu.</span> Náš AI odborník Vás bude čoskoro kontaktovať.</p>
 
-                                                <button
-                                                    onClick={closeModal}
+                                                <a
+                                                   href='https://gchat.sk/'
+                                                   target='_blank'
                                                     className='text-white font-semibold rounded-md text-[11px] md:text-sm lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     G CHAT - AI pre web stránky
-                                                </button>
+                                                </a>
                                                 <p className='mt-2.5 lg:mt-5 flex items-start text-[8px] md:text-sm lg:text-sm'>
                                                     Naprogramovala spoločnosť <a target='_blank' href='https://www.wavenet.sk' className='ml-1 font-semibold'> WaveNet</a>
                                                 </p>

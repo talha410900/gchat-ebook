@@ -106,7 +106,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
                                 {steps === 1 ?
                                     <>
-                                        <Dialog.Panel className="w-full  md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-left align-middle shadow-xl transition-all text-grey-100 relative">
+                                        <Dialog.Panel className="w-full  md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-6 pt-2 lg:p-8 text-left align-middle shadow-xl transition-all text-grey-100 relative ">
                                             <div className='absolute right-2 lg:right-3 top-2 lg:top-4' >
                                                 <Close onClick={closeModal} />
                                             </div>
@@ -140,11 +140,11 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 {open && <GdprModal open={open} closeGdpr={closeGdpr} />}
                                             </div>
                                             <div className='mt-6'>
-                                                <p className='text-[12px] md:text-xs lg:text-sm  leading-3 md:leading-5 font-semibold'><span className='underline '>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI</span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
+                                                <p className='text-[12px] md:text-xs lg:text-sm  leading-4 md:leading-5 font-semibold '><span className='underline '>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI</span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
                                             </div>
                                             <button
                                                 onClick={handelSteps}
-                                                className='text-white font-semibold rounded-md text-sm md:text-xs lg:text-lg flex justify-center items-center gap-2 mt-3 lg:mt-4 bg-green button-shadow px-4 md:px-7 py-3.5 w-full'>
+                                                className='text-white font-semibold rounded-md text-md md:text-xs lg:text-lg flex justify-center items-center gap-2 mt-3 lg:mt-4 bg-green button-shadow px-4 md:px-7 py-3.5 w-full'>
                                                 Stiahnuť E-Book teraz <Download />
                                             </button>
                                         </Dialog.Panel>

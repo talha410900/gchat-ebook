@@ -107,18 +107,18 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                 {steps === 1 ?
                                     <>
                                         <Dialog.Panel className="w-full  md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-left align-middle shadow-xl transition-all text-grey-100 relative">
-                                            <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
+                                            <div className='absolute right-2 lg:right-3 top-2 lg:top-4' >
                                                 <Close onClick={closeModal} />
                                             </div>
                                             <Dialog.Title
                                                 as="h3"
-                                                className="text-2xl md:text-3xl lg:text-[42px] font-semibold leading-[46px] mt-4"
+                                                className="text-3xl  lg:text-[42px] font-semibold leading-[46px] mt-2"
                                             >
                                                 Stiahnuť E-Book
                                             </Dialog.Title>
 
                                             <div className="md:my-3">
-                                                <p className="text-[11px] md:text-sm lg:text-base">
+                                                <p className="text-[12px] md:text-sm lg:text-base">
                                                     Pre stiahnutie E-Booku <span className='underline font-semibold'>ZDARMA</span> ,<span className='font-semibold'>vyplňte nesledujúce údaje:</span>
                                                 </p>
                                             </div>

@@ -78,7 +78,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
 
             <Transition appear show={isOpen} >
-                <Dialog as="div" className="relative z-10" onClose={()=>{}}>
+                <Dialog as="div" className="relative z-10" onClose={() => { }}>
                     <Transition.Child
 
                         enter="ease-out duration-300"
@@ -94,7 +94,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                     <div className="fixed inset-0 overflow-y-auto ">
                         <div className=" flex min-h-full items-center justify-center text-center mx-8 ">
                             <Transition.Child
-
+                                className='w-full'
                                 enter="ease-out duration-300"
                                 enterFrom="opacity-0 scale-95"
                                 enterTo="opacity-100 scale-100"
@@ -218,9 +218,9 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                         :
                                         <>
                                             <Dialog.Panel className="w-full  md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8  align-middle shadow-xl transition-all text-grey-100 relative text-center">
-                                            <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
-                                                <Close onClick={closeModal} />
-                                            </div>
+                                                <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
+                                                    <Close onClick={closeModal} />
+                                                </div>
                                                 <div  >
                                                     <Image src='/images/ebook.png' width={159} height={181} className='mx-auto w-[120px] lg:w-[159px] h-[136px] lg:h-[181px]' />
                                                 </div>
@@ -235,8 +235,8 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 <p className='mt-4  text-[10px] md:text-sm lg:text-base'>Spolu s E-Bookum <span className='font-semibold'>ste získali ZDARMA 30 min konzultáciu s našim odborníkon na umelú inteligenciu.</span> Náš AI odborník Vás bude čoskoro kontaktovať.</p>
 
                                                 <a
-                                                   href='https://gchat.sk/'
-                                                   target='_blank'
+                                                    href='https://gchat.sk/'
+                                                    target='_blank'
                                                     className='text-white font-semibold rounded-md text-[11px] md:text-sm lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     G CHAT - AI pre web stránky
                                                 </a>

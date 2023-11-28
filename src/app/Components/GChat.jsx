@@ -23,14 +23,14 @@ function GChat() {
           <div className='flex flex-col lg:flex-row justify-between  lg:pl-[130px]'>
             <div className='mt-2.5 lg:mt-[89px]  lg:w-[670px]'>
               <Image src='/images/logo.svg' width={100} height={100} className='hidden lg:block'/>
-              <h1 className='text-2xl lg:text-[57px] px-6 lg:px-0  font-inter font-bold  text-white lg:mt-[76px] leading-[1.15]'>
+              <h1 className='text-2xl lg:text-[57px] px-6 lg:px-0 text-center lg:text-start  font-inter font-bold  text-white lg:mt-[76px] leading-[1.15]'>
                 Viete už, ako využiť
                 <br />
                 <span className='underline'> UMELÚ INTELIGENCIU</span>
                 <br />
                 na vašej web stránke?
               </h1>
-              <p className='text-[10px] lg:text-base text-white leading-4 lg:leading-8 font-inter mx-8 lg:mx-0  mt-2.5 lg:mt-5 mb-6 lg:mb-12'>
+              <p className='text-[10px] lg:text-base text-center lg:text-start text-white leading-4 lg:leading-8 font-inter mx-8 lg:mx-0  mt-2.5 lg:mt-5 mb-6 lg:mb-12'>
                 Tím odborníkov z projektu
                 <span className='font-bold'>G CHAT </span>
                 na umelú inteligenciu pripravil pre všetkých podnikateľov

@@ -141,33 +141,33 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                     className='text-white rounded-md text-sm lg:text-lg flex justify-center items-center gap-2 mt-2 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     Overiť <UserCheck />
                                                 </button>
-                                                <button className='mt-4 lg:mt-7 w-full text-[9px] lg:text-base'>
+                                                <button className='my-4 lg:mt-7 w-full text-[9px] lg:text-base'>
                                                     Zaslať kód ešte raz
                                                 </button>
                                             </Dialog.Panel>
                                         </>
                                         :
                                         <>
-                                            <Dialog.Panel className="w-full h-[515px] max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-8 text-center align-middle shadow-xl transition-all text-gray-100 relative">
+                                            <Dialog.Panel className="w-full h-[368px] lg:h-[515px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-3.5 pt-2.5 lg:px-8 text-center align-middle shadow-xl transition-all text-gray-100 relative">
                                                 <div  >
-                                                    <Image src='/images/ebook.png' width={159} height={181} className='mx-auto' />
+                                                    <Image src='/images/ebook.png' width={159} height={181} className='mx-auto w-[120px] lg:w-[159px] h-[136px] lg:h-[181px]' />
                                                 </div>
                                                 <Dialog.Title
                                                     as="h3"
-                                                    className="text-[42px] font-semibold leading-[46px] "
+                                                    className="text-2xl lg:text-[42px] font-semibold leading-7 lg:leading-[46px] "
                                                 >
                                                     E-Book bol poslaný
                                                     <br />
                                                     na Váš email
                                                 </Dialog.Title>
-                                                <p className='mt-4 px-[72px] text-base'>Spolu s E-Bookum <span className='font-semibold'>ste získali ZDARMA 30 min konzultáciu s našim odborníkon na umelú inteligenciu.</span> Náš AI odborník Vás bude čoskoro kontaktovať.</p>
+                                                <p className='mt-4 lg:px-[72px] text-[10px] lg:text-base'>Spolu s E-Bookum <span className='font-semibold'>ste získali ZDARMA 30 min konzultáciu s našim odborníkon na umelú inteligenciu.</span> Náš AI odborník Vás bude čoskoro kontaktovať.</p>
 
                                                 <button
                                                     onClick={closeModal}
-                                                    className='text-white rounded-md text-lg flex justify-center items-center gap-2 mt-7 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                    className='text-white rounded-md text-[11px] lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-7 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     G CHAT - AI pre web stránky
                                                 </button>
-                                                <Link href='https://www.wavenet.sk' className='mt-5 flex items-start text-sm'>
+                                                <Link href='https://www.wavenet.sk' className='mt-2.5 lg:mt-5 flex items-start text-[8px] lg:text-sm'>
                                                     Naprogramovala spoločnosť <span className='font-semibold'>WaveNet</span>
                                                 </Link>
                                             </Dialog.Panel>

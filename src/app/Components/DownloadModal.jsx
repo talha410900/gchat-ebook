@@ -100,11 +100,11 @@ function stepBack(){
                                             </div>
                                             <div className='flex items-center gap-3 mt-2.5 md:mt-4'>
                                                 <input type='checkbox' />
-                                                <label className='text-[9px] md:text-xs lg:text-sm text-gray-400'> Potvrdzujem <span className='underline cursor-pointer' onClick={openGdpr}>ochranu osobných údajov</span></label>
+                                                <label className='text-[9px] md:text-xs lg:text-sm text-gray-400'> Potvrdzujem <span className='underline '>ochranu osobných údajov</span></label>
                                                 {open && <GdprModal open={open} closeGdpr={closeGdpr} />}
                                             </div>
                                             <div className='mt-6'>
-                                                <p className='text-[8px] md:text-xs lg:text-sm leading-5 font-semibold'><span className='underline'>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI </span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
+                                                <p className='text-[8px] md:text-xs lg:text-sm leading-5 font-semibold'><span   onClick={openGdpr}className='underline cursor-pointer'>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI </span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
                                             </div>
                                             <button
                                                 onClick={handelSteps}

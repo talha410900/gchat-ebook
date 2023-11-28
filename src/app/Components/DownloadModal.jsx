@@ -70,45 +70,45 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
                                 {steps === 1 ?
                                     <>
-                                        <Dialog.Panel className="w-full h-[606px] max-w-[624px] transform overflow-hidden rounded-2xl bg-white p-8 text-left align-middle shadow-xl transition-all text-gray-100">
-                                            <div className='flex justify-end ' >
+                                        <Dialog.Panel className="w-full h-[442px] lg:h-[606px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-left align-middle shadow-xl transition-all text-gray-100 relative">
+                                            <div className='absolute right-2 top-1' >
                                                 <Close />
                                             </div>
                                             <Dialog.Title
                                                 as="h3"
-                                                className="text-[42px] font-semibold leading-[46px] "
+                                                className="text-2xl lg:text-[42px] font-semibold leading-[46px] "
                                             >
                                                 Stiahnuť E-Book
                                             </Dialog.Title>
 
-                                            <div className="my-3">
-                                                <p className="text-base">
+                                            <div className="lg:my-3">
+                                                <p className="text-[8px] lg:text-base">
                                                     Pre stiahnutie E-Booku <span className='underline font-semibold'>ZDARMA </span> ,<span className='font-semibold'>vyplňte nesledujúce údaje:</span>
                                                 </p>
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-2.5 h-[52px] w-full'>
-                                                <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-base border-none outline-none' />
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-2.5 h-8 lg:h-[52px] w-full'>
+                                                <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-[10px] lg:text-base border-none outline-none' />
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-4 h-[52px] w-full'>
-                                                <input type='email' required placeholder='Napíšte Váš E-Mail *' className='text-base border-none outline-none' />
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-4 h-8 lg:h-[52px] w-full'>
+                                                <input type='email' required placeholder='Napíšte Váš E-Mail *' className='text-[10px] lg:text-base border-none outline-none' />
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-4 h-[52px] w-full'>
-                                                <input type='number' required placeholder='Napíšte Vaše telefónne číslo *' className='text-base border-none outline-none' />
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-4 h-8 lg:h-[52px] w-full'>
+                                                <input type='number' required placeholder='Napíšte Vaše telefónne číslo *' className='text-[10px] lg:text-base border-none outline-none' />
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-4 h-[52px] w-full'>
-                                                <input type='email' required placeholder='Napíšte názov Vašej web stránky www. *' className='text-base border-none outline-none' />
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-gray-300 items-center mt-4 h-8 lg:h-[52px] w-full'>
+                                                <input type='email' required placeholder='Napíšte názov Vašej web stránky www. *' className='text-[10px] lg:text-base border-none outline-none' />
                                             </div>
-                                            <div className='flex items-center gap-3 mt-4'>
+                                            <div className='flex items-center gap-3 mt-2.5 lg:mt-4'>
                                                 <input type='checkbox' />
-                                                <label className='text-sm text-gray-400'> Potvrdzujem <span className='underline cursor-pointer' onClick={openGdpr}>ochranu osobných údajov</span></label>
+                                                <label className='text-[9px] lg:text-sm text-gray-400'> Potvrdzujem <span className='underline cursor-pointer' onClick={openGdpr}>ochranu osobných údajov</span></label>
                                                 {open && <GdprModal open={open} closeGdpr={closeGdpr} />}
                                             </div>
                                             <div className='mt-6'>
-                                                <p className='text-sm leading-5 font-semibold'><span className='underline'>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI </span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
+                                                <p className='text-[8px] lg:text-sm leading-5 font-semibold'><span className='underline'>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI </span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
                                             </div>
                                             <button
                                                 onClick={handelSteps}
-                                                className='text-white rounded-md text-lg flex justify-center items-center gap-2 mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                className='text-white rounded-md text-sm lg:text-lg flex justify-center items-center gap-2 mt-3 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
                                                 Stiahnuť E-Book teraz <Download />
                                             </button>
                                         </Dialog.Panel>
@@ -116,7 +116,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                     :
                                     steps === 2 ?
                                         <>
-                                            <Dialog.Panel className="w-full h-[369px] max-w-[624px] transform overflow-hidden rounded-2xl bg-white p-8 text-center align-middle shadow-xl transition-all text-gray-100 relative">
+                                            <Dialog.Panel className="w-full h-[369px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-center align-middle shadow-xl transition-all text-gray-100 relative">
                                                 <div className='absolute right-3 top-4' >
                                                     <Close />
                                                 </div>

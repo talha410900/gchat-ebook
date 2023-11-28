@@ -33,28 +33,28 @@ function GdprModal({ open, closeGdpr }) {
               leaveTo="opacity-0 scale-95"
             >
 
-              <Dialog.Panel className="w-full h-[415px] max-w-[624px] transform overflow-hidden rounded-2xl bg-white pl-8 pt-1 pr-1.5 pb-8 text-left align-middle shadow-xl transition-all text-gray-100">
-                <div className='flex justify-end ' >
+              <Dialog.Panel className="w-full h-[378px] lg:h-[415px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:pl-8 lg:pt-1 lg:pr-1.5 lg:pb-8  text-left align-middle shadow-xl transition-all text-gray-100 relative">
+                <div className='absolute right-2 top-1' >
                   <Close />
                 </div>
                 <Dialog.Title
                   as="h3"
-                  className="text-4xl font-semibold leading-[46px] "
+                  className="text-2xl lg:text-4xl font-semibold leading-[46px] "
                 >
                   GDPR
                 </Dialog.Title>
 
                 <div className='mt-1.5'>
-                  <h2 className='text-base font-semibold'>1. IDENTIFIKAČNÉ ÚDAJE</h2>
-                  <p className='text-xs text-gray-500'>Správcom osobných údajov je spoločnosť Onlinesvet s. r. o., sídlom Soblahov 852 913 38 Soblahov, IČO: 54192242, Zapísaná v Obchodnom registri Okresného súdu Trenčín, Vložka číslo 43346/R. Kontaktné údaje prevádzkovateľa: email: info@gchat.sk.</p>
+                  <h2 className='text-xs lg:text-base font-semibold'>1. IDENTIFIKAČNÉ ÚDAJE</h2>
+                  <p className='text-[8px] lg:text-xs text-gray-500'>Správcom osobných údajov je spoločnosť Onlinesvet s. r. o., sídlom Soblahov 852 913 38 Soblahov, IČO: 54192242, Zapísaná v Obchodnom registri Okresného súdu Trenčín, Vložka číslo 43346/R. Kontaktné údaje prevádzkovateľa: email: info@gchat.sk.</p>
                 </div>
 
-                <div className='mt-5'>
-                  <h2 className='text-base font-semibold'>2. SPRACOVANIE OSOBNÝCH ÚDAJOV</h2>
-                  <p className='text-xs text-gray-500'>Osobné údaje sú spracované na účely oslovenia na mieru, s ponukou produktov a služieb, zaslanie informácií v oblasti spoločnosťou poskytovaných služieb a k výkonu práv a povinností vyplývajúcich medzi Vami a spoločnosťou Onlinesvet s. r. o.. Ide o nasledovné osobné údaje zákazníka: meno, telefónne číslo, e-mailová adresa.</p>
-                  <p className='text-xs text-gray-500'>Zákonným dôvodom pre spracovanie osobných údajov je súhlas týmto daný správcovi v zmysle:
+                <div className='mt-2 lg:mt-5'>
+                  <h2 className='text-xs lg:text-base font-semibold'>2. SPRACOVANIE OSOBNÝCH ÚDAJOV</h2>
+                  <p className='text-[8px] lg:text-xs text-gray-500'>Osobné údaje sú spracované na účely oslovenia na mieru, s ponukou produktov a služieb, zaslanie informácií v oblasti spoločnosťou poskytovaných služieb a k výkonu práv a povinností vyplývajúcich medzi Vami a spoločnosťou Onlinesvet s. r. o.. Ide o nasledovné osobné údaje zákazníka: meno, telefónne číslo, e-mailová adresa.</p>
+                  <p className='text-[8px] lg:text-xs text-gray-500'>Zákonným dôvodom pre spracovanie osobných údajov je súhlas týmto daný správcovi v zmysle:
                     - plnenie zmluvy článku 6 odst. 1 písm. b) GDPR a plnenie práv a povinností správcu podľa článku 6 odst. 1 písm. c) GDPR,</p>
-                  <p className='text-xs text-gray-500'>- článku 6 ods.1písm. a) Nariadenia Európskeho parlamentu a Rady (EU) 2016/679 o ochrane fyzických osôb v súvislosti so spracovávaním osobných údajov a voľnom pohybu týchto údajov (ďalej GDPR) pre účely priameho marketingu, pokiaľ nedošlo k objednávke tovaru,
+                  <p className='text-[8px] lg:text-xs text-gray-500'>- článku 6 ods.1písm. a) Nariadenia Európskeho parlamentu a Rady (EU) 2016/679 o ochrane fyzických osôb v súvislosti so spracovávaním osobných údajov a voľnom pohybu týchto údajov (ďalej GDPR) pre účely priameho marketingu, pokiaľ nedošlo k objednávke tovaru,
                     - oprávnený záujem správcu na vykonanie priameho marketingu podľa čl. 6 odst. 1 písm. f) GDPR</p>
                 </div>
               </Dialog.Panel>

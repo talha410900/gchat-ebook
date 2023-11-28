@@ -76,7 +76,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                             </div>
                                             <Dialog.Title
                                                 as="h3"
-                                                className="text-2xl md:text-3xl lg:text-[42px] font-semibold leading-[46px] lg:mt-4"
+                                                className="text-2xl md:text-3xl lg:text-[42px] font-semibold leading-[46px] mt-4"
                                             >
                                                 Stiahnuť E-Book
                                             </Dialog.Title>

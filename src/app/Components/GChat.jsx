@@ -20,9 +20,9 @@ function GChat() {
 
       <div className=''>
         <div className='max-w-[320px] md:max-w-[1100px] lg:max-w-[1475px] mx-auto max-h-full h-[697px] md:h-[100vh]'>
-          <div className='flex flex-col md:flex-row justify-between sm:px-8 md:px-10 lg:px-20'>
+          <div className='flex flex-col md:flex-row justify-between  sm:px-8 md:px-10 lg:px-20'>
             <div className='mt-2.5 md:mt-[89px] md:w-[500px] lg:w-[670px]'>
-              <Image src='/images/logo.svg' width={100} height={100} className='hidden md:block'/>
+              <Image src='/images/logo.svg' width={100} height={100} className='hidden md:block' />
               <h1 className='text-2xl md:text-[30px] lg:text-[40px] xl:text-[57px] px-0 text-center md:text-start  font-inter font-bold  text-white md:mt-12 lg:mt-[76px] leading-[1.15]'>
                 Viete už, ako využiť
                 <br />
@@ -33,17 +33,15 @@ function GChat() {
               <p className='text-[10px] md:text-sm lg:text-base text-center md:text-start text-white/80 leading-4 lg:leading-8 font-inter mx-5 md:mx-0  mt-2.5 lg:mt-5 mb-6 lg:mb-12'>
                 Tím odborníkov z projektu
                 <span className='font-bold'> G CHAT </span>
-                 na umelú inteligenciu pripravil pre všetkých podnikateľov
+                na umelú inteligenciu pripravil pre všetkých podnikateľov
                 <span className='font-bold underline mx-1'>ZDARMA E-Book</span>
                 s cieľom rozšíriť vaše obzory využitia AI na Web stránkach a E-Shopoch.
               </p>
               <div className='flex flex-col xl:flex-row items-center lg:gap-10'>
-                <button className='text-white text-lg font-semibold flex items-center gap-4 rounded-[100px] bg-green button-shadow px-11 py-4 lg:py-6'>
+                <button onClick={openModal} className='text-white text-lg font-semibold flex items-center gap-4 rounded-[100px] bg-green button-shadow px-11 py-4 lg:py-6'>
                   Stiahnuť E-Book <Arrow />
                 </button>
-                <button
-                  onClick={openModal}
-                  className='text-white/60 flex items-start mt-2.5 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
+                <button className='text-white/60 flex items-start mt-2.5 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
                   <Download />
                   <div className='flex flex-col items-start'>
                     <p className='text-sm lg:text-base font-bold'> Už stiahnutých E-Bookov</p>

@@ -78,7 +78,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
 
             <Transition appear show={isOpen} >
-                <Dialog as="div" className="relative z-10" onClose={closeModal}>
+                <Dialog as="div" className="relative z-10" onClose={()=>{}}>
                     <Transition.Child
 
                         enter="ease-out duration-300"

@@ -8,7 +8,7 @@ import Close from '../../../Icons/Close'
 function GdprModal({ open, closeGdpr }) {
   return (
     <Transition appear show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={closeGdpr}>
+      <Dialog as="div" className="relative z-10" onClose={()=>{}}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -32,7 +32,7 @@ function GdprModal({ open, closeGdpr }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className='h-[606px] bg-white/10' style={{
+              <div className='h-[606px] bg-white/10'  onClick={closeGdpr}  style={{
 
                 backdropFilter: 'blur(3px)',
               }} >

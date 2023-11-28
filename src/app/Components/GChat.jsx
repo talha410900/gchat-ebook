@@ -20,8 +20,8 @@ function GChat() {
 
       <div className=''>
         <div className='max-w-[320px] md:max-w-[1100px] lg:max-w-[1475px] mx-auto max-h-full h-[697px] md:h-[100vh]'>
-          <div className='flex flex-col md:flex-row justify-between  sm:px-8 md:px-10 lg:px-20'>
-            <div className='mt-2.5 md:mt-[89px] md:w-[500px] lg:w-[670px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 sm:px-8 md:px-10 lg:px-20 content-center h-full flex-wrap'>
+            <div className='mt-2.5 md:mt-[89px] '>
               <Image src='/images/logo.svg' width={100} height={100} className='hidden md:block' />
               <h1 className='text-2xl md:text-[30px] lg:text-[40px] xl:text-[57px] px-0 text-center md:text-start  font-inter font-bold  text-white md:mt-12 lg:mt-[76px] leading-[1.15]'>
                 Viete už, ako využiť
@@ -41,18 +41,18 @@ function GChat() {
                 <button onClick={openModal} className='text-white text-lg font-semibold flex items-center gap-4 rounded-[100px] bg-green button-shadow px-11 py-4 lg:py-6'>
                   Stiahnuť E-Book <Arrow />
                 </button>
-                <button className='text-white/60 flex items-start mt-2.5 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
+                <div className='text-white/60 flex items-start mt-2.5 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
                   <Download />
                   <div className='flex flex-col items-start'>
                     <p className='text-sm lg:text-base font-bold'> Už stiahnutých E-Bookov</p>
                     <p className='text-[27px] lg:text-3xl font-semibold text-white'>234 ks</p>
                   </div>
-                </button>
+                </div>
                 {isOpen && <DownloadModal isOpen={isOpen} closeModal={closeModal} />}
               </div>
             </div>
-            <div className='mt-11 md:mt-14 lg:w-[700px] px-9 md:px-0 order-first md:order-last'>
-              <Image src='/images/ebook.png' width={700} height={800} className=' w-[250px] h-[285px] md:w-[600px] lg:[650px] xl:w-[700px] md:h-[600px] lg:h-full' />
+            <div className='mt-11 md:mt-14  px-9 md:px-0 order-first md:order-last'>
+              <Image src='/images/ebook.png' width={700} height={800} className=' w-[250px] h-[285px] md:w-[600px] lg:[650px] xl:w-[700px] md:h-[600px] lg:h-full object-cover' />
             </div>
           </div>
         </div>

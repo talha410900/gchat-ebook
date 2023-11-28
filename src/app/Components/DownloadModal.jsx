@@ -8,6 +8,7 @@ import GdprModal from './GdprModal'
 import UserCheck from '../../../Icons/UserCheck'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRef } from 'react';
 
 export default function DownloadModal({ isOpen, closeModal }) {
 
@@ -22,7 +23,8 @@ export default function DownloadModal({ isOpen, closeModal }) {
     }
 
 
-    const [steps, setSteps] = React.useState(1)
+    const [steps, setSteps] = React.useState(1);
+    
     function handelSteps() {
         if (steps === 1) {
             setSteps(prev => prev + 1);
@@ -37,6 +39,40 @@ export default function DownloadModal({ isOpen, closeModal }) {
     function stepBack() {
         setSteps(curent => curent - 1)
     }
+
+
+    const [input1, setInput1] = useState('');
+    const [input2, setInput2] = useState('');
+    const [input3, setInput3] = useState('');
+    const [input4, setInput4] = useState('');
+
+    const input1Ref = useRef();
+    const input2Ref = useRef();
+    const input3Ref = useRef();
+    const input4Ref = useRef();
+
+    const handleChange = (value, setter, nextInputRef) => {
+        setter(value);
+        if (value.length === 1 && nextInputRef) {
+            nextInputRef.current.focus();
+        }
+    };
+
+
+
+    const verifyOTP = () => {
+        // Combine input values and verify OTP
+        const otp = input1 + input2 + input3 + input4;
+        console.log('Verifying OTP:', otp);
+        // Add your OTP verification logic here
+    };
+
+    const handleBackspace = (event, prevInputRef, setter) => {
+        if (event.key === 'Backspace' && event.target.value === '') {
+            setter('');
+            prevInputRef.current.focus();
+        }
+    };
     return (
         <>
 
@@ -130,16 +166,43 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
                                                 <div className='mt-4 md:mt-5 flex flex-row justify-center items-center gap-2 lg:gap-3 px-8 md:px-0 '>
                                                     <div className=''>
-                                                        <input className='border-none outline-none  bg-grey-600 w-10 lg:w-[54px] h-[42px] lg:h-[57px] border-2 border-grey-700 shadow-inner rounded-lg ' />
+                                                        <input
+                                                            value={input1}
+                                                            ref={input1Ref}
+                                                            onChange={(e) => handleChange(e.target.value, setInput1, input2Ref)}
+                                                            maxLength={1}
+                                                            onKeyDown={(e) => handleBackspace(e, input1Ref, setInput1)}
+                                                            className='border-none outline-none  bg-grey-600 w-10 lg:w-[54px] h-[42px] lg:h-[57px] border-2 border-grey-700 shadow-inner rounded-lg  p-4 text-2xl font-bold text-center ' />
                                                     </div>
                                                     <div className=' '>
-                                                        <input className='border-none outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px]' />
+                                                        <input
+                                                            ref={input2Ref}
+                                                            value={input2}
+                                                            onChange={(e) => handleChange(e.target.value, setInput2, input3Ref)}
+                                                            maxLength={1}
+                                                            onKeyDown={(e) => handleBackspace(e, input1Ref, setInput2)}
+                                                            className='border-none outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px] p-4 text-2xl font-bold text-center ' />
                                                     </div>
                                                     <div className=' '>
-                                                        <input className='border-none outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px]' />
+                                                        <input
+                                                            ref={input3Ref}
+                                                            value={input3}
+                                                            onChange={(e) => handleChange(e.target.value, setInput3, input4Ref)}
+                                                            onKeyDown={(e) => handleBackspace(e, input2Ref, setInput3)}
+
+                                                            maxLength={1}
+                                                            className='border-none outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px] p-4 text-2xl font-bold text-center ' />
                                                     </div>
                                                     <div className=' '>
-                                                        <input className='border-none outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px]' />
+                                                        <input
+                                                            ref={input4Ref}
+                                                            value={input4}
+                                                            onChange={(e) => handleChange(e.target.value, setInput4)}
+                                                            maxLength={1}
+                                                            onKeyDown={(e) => handleBackspace(e, input3Ref, setInput4)}
+
+                                                            onKeyUp={() => input4.length === 1 && verifyOTP()}
+                                                            className='border-none outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px] p-4 text-2xl font-bold text-center ' />
                                                     </div>
                                                 </div>
 

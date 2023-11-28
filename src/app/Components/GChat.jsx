@@ -51,8 +51,8 @@ function GChat() {
                 {isOpen && <DownloadModal isOpen={isOpen} closeModal={closeModal} />}
               </div>
             </div>
-            <div className='mt-11 md:mt-14  px-9 md:px-0 order-first md:order-last'>
-              <Image src='/images/ebook.png' width={700} height={800} className=' w-[250px] h-[285px] md:w-[600px] lg:[650px] xl:w-[700px] md:h-[600px] md:ml-12 lg:h-full object-cover' />
+            <div className='mt-11 md:mt-14   order-first md:order-last'>
+              <Image src='/images/ebook.png' width={700} height={800} className=' w-[300px] h-[285px] md:w-[600px] lg:[650px] xl:w-[700px] md:h-[600px] md:ml-12 lg:h-full object-cover mx-auto' />
             </div>
           </div>
         </div>

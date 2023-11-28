@@ -218,9 +218,9 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                         :
                                         <>
                                             <Dialog.Panel className="w-full  md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8  align-middle shadow-xl transition-all text-grey-100 relative text-center">
-                                                <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
+                                                {/* <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
                                                     <Close onClick={closeModal} />
-                                                </div>
+                                                </div> */}
                                                 <div  >
                                                     <Image src='/images/ebook.png' width={159} height={181} className='mx-auto w-[120px] lg:w-[159px] h-[136px] lg:h-[181px]' />
                                                 </div>

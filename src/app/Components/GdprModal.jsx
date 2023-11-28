@@ -33,13 +33,13 @@ function GdprModal({ open, closeGdpr }) {
               leaveTo="opacity-0 scale-95"
             >
 
-              <Dialog.Panel className="w-full h-[378px] lg:h-[415px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:pl-8 lg:pt-1 lg:pr-1.5 lg:pb-8  text-left align-middle shadow-xl transition-all text-gray-100 relative">
+              <Dialog.Panel className="w-full h-[378px] lg:h-[415px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:pl-8 lg:pt-7 lg:pr-1.5 lg:pb-8  text-left align-middle shadow-xl transition-all text-gray-100 relative">
                 <div className='absolute right-2 top-1' >
                   <Close />
                 </div>
                 <Dialog.Title
                   as="h3"
-                  className="text-2xl lg:text-4xl font-semibold leading-[46px] "
+                  className="text-2xl lg:text-4xl  font-semibold leading-[46px] "
                 >
                   GDPR
                 </Dialog.Title>

@@ -116,32 +116,32 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                     :
                                     steps === 2 ?
                                         <>
-                                            <Dialog.Panel className="w-full h-[369px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-center align-middle shadow-xl transition-all text-gray-100 relative">
-                                                <div className='absolute right-3 top-4' >
+                                            <Dialog.Panel className="w-full h-[226px] lg:h-[369px] max-w-[267px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-3.5 pt-2.5 lg:p-8 text-center align-middle shadow-xl transition-all text-gray-100 relative">
+                                                <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
                                                     <Close />
                                                 </div>
                                                 <Dialog.Title
                                                     as="h3"
-                                                    className="text-[42px] font-semibold leading-[46px] "
+                                                    className="text-2xl lg:text-[42px] font-semibold leading-[46px] "
                                                 >
                                                     Verifikácia E-Mailu
                                                 </Dialog.Title>
-                                                <p className='mt-1.5 pb-4'> Na Váš zadaný E-Mail <span className='underline'> bol zaslaný 4 číselný verifikačný kód.</span></p>
+                                                <p className='lg:mt-1.5 lg:pb-4 text-[8px] lg:text-base'> Na Váš zadaný E-Mail <span className='underline'> bol zaslaný 4 číselný verifikačný kód.</span></p>
 
-                                                <div className='mt-5 flex flex-row gap-3 w-[255px] mx-auto'>
-                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-[255px] h-[57px] bg-gray-600'></div>
-                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-[255px] h-[57px] bg-gray-600'></div>
-                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-[255px] h-[57px] bg-gray-600'></div>
-                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-[255px] h-[57px] bg-gray-600'></div>
+                                                <div className='mt-4 lg:mt-5 flex flex-row gap-2 lg:gap-3 px-8 lg:px-0 lg:w-[255px] mx-auto'>
+                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-10 lg:w-[255px] h-[42px] lg:h-[57px] bg-gray-600'></div>
+                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-10 lg:w-[255px] h-[42px] lg:h-[57px] bg-gray-600'></div>
+                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-10 lg:w-[255px] h-[42px] lg:h-[57px] bg-gray-600'></div>
+                                                    <div className='border-2 border-gray-700 shadow-inner rounded-lg w-10 lg:w-[255px] h-[42px] lg:h-[57px] bg-gray-600'></div>
                                                 </div>
 
 
                                                 <button
                                                     onClick={handelSteps}
-                                                    className='text-white rounded-md text-lg flex justify-center items-center gap-2 mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                    className='text-white rounded-md text-sm lg:text-lg flex justify-center items-center gap-2 mt-2 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     Overiť <UserCheck />
                                                 </button>
-                                                <button className='mt-7 w-full text-base'>
+                                                <button className='mt-4 lg:mt-7 w-full text-[9px] lg:text-base'>
                                                     Zaslať kód ešte raz
                                                 </button>
                                             </Dialog.Panel>

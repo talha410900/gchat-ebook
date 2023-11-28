@@ -49,27 +49,27 @@ function GdprModal({ open, closeGdpr }) {
 
                   <div className='mt-1.5 '>
                     <h2 className='text-xs md:text-xm lg:text-base font-semibold'>1. IDENTIFIKAČNÉ ÚDAJE</h2>
-                    <p className='text-[10px] md:text-xs text-grey-500'>Správcom osobných údajov je spoločnosť Onlinesvet s. r. o., sídlom Soblahov 852 913 38 Soblahov, IČO: 54192242, Zapísaná v Obchodnom registri Okresného súdu Trenčín, Vložka číslo 43346/R. Kontaktné údaje prevádzkovateľa: email: info@gchat.sk.</p>
+                    <p className='text-[12px] md:text-xs text-grey-500'>Správcom osobných údajov je spoločnosť Onlinesvet s. r. o., sídlom Soblahov 852 913 38 Soblahov, IČO: 54192242, Zapísaná v Obchodnom registri Okresného súdu Trenčín, Vložka číslo 43346/R. Kontaktné údaje prevádzkovateľa: email: info@gchat.sk.</p>
                   </div>
 
                   <div className='mt-2 lg:mt-5'>
                     <h2 className='text-xs md:text-xm lg:text-base font-semibold'>2. SPRACOVANIE OSOBNÝCH ÚDAJOV</h2>
-                    <p className='text-[10px] md:text-xs text-grey-500'>Osobné údaje sú spracované na účely oslovenia na mieru, s ponukou produktov a služieb, zaslanie informácií v oblasti spoločnosťou poskytovaných služieb a k výkonu práv a povinností vyplývajúcich medzi Vami a spoločnosťou Onlinesvet s. r. o.. Ide o nasledovné osobné údaje zákazníka: meno, telefónne číslo, e-mailová adresa. Zákonným dôvodom pre spracovanie osobných údajov je súhlas týmto daný správcovi v zmysle: - plnenie zmluvy článku 6 odst. 1 písm. b) GDPR a plnenie práv a povinností správcu podľa článku 6 odst. 1 písm. c) GDPR, - článku 6 ods.1písm. a) Nariadenia Európskeho parlamentu a Rady (EU) 2016/679 o ochrane fyzických osôb v súvislosti so spracovávaním osobných údajov a voľnom pohybu týchto údajov (ďalej GDPR) pre účely priameho marketingu, pokiaľ nedošlo k objednávke tovaru, - oprávnený záujem správcu na vykonanie priameho marketingu podľa čl. 6 odst. 1 písm. f) GDPR Spracúvanie osobných údajov je v prípade zaslania kontaktného formuláru, nevyhnutného na kontaktovanie a na účely plnenia zákonnej povinnosti spoločnosti Onlinesvet s. r. o.. Zo strany správcu nedochádza k automatickému individuálnemu rozhodovaniu v zmysle čl. 22 GDPR.</p>
+                    <p className='text-[12px] md:text-xs text-grey-500'>Osobné údaje sú spracované na účely oslovenia na mieru, s ponukou produktov a služieb, zaslanie informácií v oblasti spoločnosťou poskytovaných služieb a k výkonu práv a povinností vyplývajúcich medzi Vami a spoločnosťou Onlinesvet s. r. o.. Ide o nasledovné osobné údaje zákazníka: meno, telefónne číslo, e-mailová adresa. Zákonným dôvodom pre spracovanie osobných údajov je súhlas týmto daný správcovi v zmysle: - plnenie zmluvy článku 6 odst. 1 písm. b) GDPR a plnenie práv a povinností správcu podľa článku 6 odst. 1 písm. c) GDPR, - článku 6 ods.1písm. a) Nariadenia Európskeho parlamentu a Rady (EU) 2016/679 o ochrane fyzických osôb v súvislosti so spracovávaním osobných údajov a voľnom pohybu týchto údajov (ďalej GDPR) pre účely priameho marketingu, pokiaľ nedošlo k objednávke tovaru, - oprávnený záujem správcu na vykonanie priameho marketingu podľa čl. 6 odst. 1 písm. f) GDPR Spracúvanie osobných údajov je v prípade zaslania kontaktného formuláru, nevyhnutného na kontaktovanie a na účely plnenia zákonnej povinnosti spoločnosti Onlinesvet s. r. o.. Zo strany správcu nedochádza k automatickému individuálnemu rozhodovaniu v zmysle čl. 22 GDPR.</p>
                   </div>
 
                   <div className='mt-2 lg:mt-5'>
                     <h2 className='text-xs md:text-xm lg:text-base font-semibold'>3. DOBA ULOŽENIA OSOBNÝCH ÚDAJOV</h2>
-                    <p className='text-[10px] md:text-xs text-grey-500'>Osobné údaje sú spracúvané na dobu nevyhnutnú k výkonu práv a povinností vyplývajúcich zo zmluvného vzťahu (najviac po dobu 3 rokov od ukončenia zmluvného vzťahu) alebo do doby odvolania súhlasu so spracovaním osobných údajov v písomnej forme adresovanej predávajúcemu, a to poštou, telefonicky alebo elektronicky na e-mail info@gchat.sk</p>
+                    <p className='text-[12px] md:text-xs text-grey-500'>Osobné údaje sú spracúvané na dobu nevyhnutnú k výkonu práv a povinností vyplývajúcich zo zmluvného vzťahu (najviac po dobu 3 rokov od ukončenia zmluvného vzťahu) alebo do doby odvolania súhlasu so spracovaním osobných údajov v písomnej forme adresovanej predávajúcemu, a to poštou, telefonicky alebo elektronicky na e-mail info@gchat.sk</p>
                   </div>
 
                   <div className='mt-2 lg:mt-5'>
                     <h2 className='text-xs md:text-xm lg:text-base font-semibold'>4. PRÍJEMCOVIA OSOBNÝCH ÚDAJOV</h2>
-                    <p className='text-[10px] md:text-xs text-grey-500'>Príjemcami osobných údajov sú nasledovné osoby: - spoločnosť Onlinesvet s. r. o., sídlom Soblahov 852 913 38 Soblahov, IČO: 54192242, ako sprostredkovateľ pre vedenie účtovníctva</p>
+                    <p className='text-[12px] md:text-xs text-grey-500'>Príjemcami osobných údajov sú nasledovné osoby: - spoločnosť Onlinesvet s. r. o., sídlom Soblahov 852 913 38 Soblahov, IČO: 54192242, ako sprostredkovateľ pre vedenie účtovníctva</p>
                   </div>
 
                   <div className='mt-2 lg:mt-5'>
                     <h2 className='text-xs md:text-xm lg:text-base font-semibold'>5. PRÁVA SUBJEKTU ÚDAJOV</h2>
-                    <p className='text-[10px] md:text-xs text-grey-500'>Za podmienok stanovených v GDPR máte právo:<br />
+                    <p className='text-[12px] md:text-xs text-grey-500'>Za podmienok stanovených v GDPR máte právo:<br />
                       - na prístup k osobným údajom<br />
                       - na opravu osobných údajov<br />
                       - na obmedzenie spracovania osobných údajov<br />
@@ -80,12 +80,12 @@ function GdprModal({ open, closeGdpr }) {
 
                   <div className='mt-2 lg:mt-5'>
                     <h2 className='text-xs md:text-xm lg:text-base font-semibold'>6. ZABEZPEČENIE OSOBNÝCH ÚDAJOV</h2>
-                    <p className='text-[10px] md:text-xs text-grey-500'>Správca sa zaväzuje prijať vhodné technické a organizačné opatrenia k zabezpečeniu osobných údajov, aby nedošlo k neoprávnenému prístupu k týmto údajom alebo k ich strate. Správca prehlasuje, že k osobným údajom budú mať prístup len oprávnené osoby povinné zachovávať mlčanlivosť o osobných údajoch. Správca prijal technické opatrenia k zabezpečeniu dátových úložísk a osobným údajom evidovaným v listinnej podobe.</p>
+                    <p className='text-[12px] md:text-xs text-grey-500'>Správca sa zaväzuje prijať vhodné technické a organizačné opatrenia k zabezpečeniu osobných údajov, aby nedošlo k neoprávnenému prístupu k týmto údajom alebo k ich strate. Správca prehlasuje, že k osobným údajom budú mať prístup len oprávnené osoby povinné zachovávať mlčanlivosť o osobných údajoch. Správca prijal technické opatrenia k zabezpečeniu dátových úložísk a osobným údajom evidovaným v listinnej podobe.</p>
                   </div>
 
                   <div className='mt-2 lg:mt-5'>
                     <h2 className='text-xs md:text-xm lg:text-base font-semibold'>7. ZÁVEREČNÉ USTANOVENIA</h2>
-                    <p className='text-[10px] md:text-xs text-grey-500'>Odoslaním formuláru potvrdzujete, že ste sa s podmienkami ochrany osobných údajov oboznámili a bezvýhradne s nimi súhlasíte. Správca si vyhradzuje právo meniť tieto podmienky. Aktuálna verzia podmienok je zverejnená na internetových stránkach správcu.<br />
+                    <p className='text-[12px] md:text-xs text-grey-500'>Odoslaním formuláru potvrdzujete, že ste sa s podmienkami ochrany osobných údajov oboznámili a bezvýhradne s nimi súhlasíte. Správca si vyhradzuje právo meniť tieto podmienky. Aktuálna verzia podmienok je zverejnená na internetových stránkach správcu.<br />
                       Dátum poslednej aktualizácie 15.01.2023</p>
                   </div>
                 </Dialog.Panel>

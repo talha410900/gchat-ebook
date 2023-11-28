@@ -172,7 +172,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                             onChange={(e) => handleChange(e.target.value, setInput1, input2Ref)}
                                                             maxLength={1}
                                                             onKeyDown={(e) => handleBackspace(e, input1Ref, setInput1)}
-                                                            className=' outline-none  bg-grey-600 w-10 lg:w-[54px] h-[42px] lg:h-[57px] border-2 border-grey-700 shadow-inner rounded-lg  p-4 text-2xl font-bold text-center ' />
+                                                            className=' outline-none  bg-grey-600 w-10 lg:w-[54px] h-[42px] lg:h-[57px] border-2 border-grey-700 shadow-inner rounded-lg   text-2xl font-bold text-center ' />
                                                     </div>
                                                     <div className=' '>
                                                         <input
@@ -181,7 +181,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                             onChange={(e) => handleChange(e.target.value, setInput2, input3Ref)}
                                                             maxLength={1}
                                                             onKeyDown={(e) => handleBackspace(e, input1Ref, setInput2)}
-                                                            className=' outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px] p-4 text-2xl font-bold text-center ' />
+                                                            className=' outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px]  text-2xl font-bold text-center ' />
                                                     </div>
                                                     <div className=' '>
                                                         <input
@@ -191,7 +191,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                             onKeyDown={(e) => handleBackspace(e, input2Ref, setInput3)}
 
                                                             maxLength={1}
-                                                            className=' outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px] p-4 text-2xl font-bold text-center ' />
+                                                            className=' outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px]  text-2xl font-bold text-center ' />
                                                     </div>
                                                     <div className=' '>
                                                         <input
@@ -202,15 +202,15 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                             onKeyDown={(e) => handleBackspace(e, input3Ref, setInput4)}
 
                                                             onKeyUp={() => input4.length === 1 && verifyOTP()}
-                                                            className=' outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px] p-4 text-2xl font-bold text-center ' />
+                                                            className=' outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px]  text-2xl font-bold text-center ' />
                                                     </div>
                                                 </div>
                                                 <button
                                                     onClick={handelSteps}
-                                                    className='text-white rounded-md text-md lg:text-lg flex justify-center font-semibold items-center gap-2 mt-2 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                    className='text-white rounded-md text-lg lg:text-lg flex justify-center font-semibold items-center gap-2 mt-2 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     Overiť <UserCheck />
                                                 </button>
-                                                <button className='mt-4 lg:mt-7 w-full text-[10px] md:text-sm lg:text-base'>
+                                                <button className='mt-4 lg:mt-7 w-full text-md md:text-sm lg:text-base'>
                                                     Zaslať kód ešte raz
                                                 </button>
                                             </Dialog.Panel>
@@ -237,7 +237,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 <a
                                                     href='https://gchat.sk/'
                                                     target='_blank'
-                                                    className='text-white font-semibold rounded-md text-md md:text-sm lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                    className='text-white font-semibold rounded-md text-md lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     G CHAT - AI pre web stránky
                                                 </a>
                                                 <p className='mt-2.5 lg:mt-5 flex items-start text-[12px] md:text-sm lg:text-sm'>

@@ -94,7 +94,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                     <div className="fixed inset-0 overflow-y-auto ">
                         <div className=" flex min-h-full items-center justify-center text-center mx-8 ">
                             <Transition.Child
-                                className='w-full'
+                                className=' w-full sm:w-auto '
                                 enter="ease-out duration-300"
                                 enterFrom="opacity-0 scale-95"
                                 enterTo="opacity-100 scale-100"
@@ -123,24 +123,24 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 </p>
                                             </div>
                                             <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-2.5 h-[52px] w-full'>
-                                                <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
+                                                <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
                                             </div>
                                             <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>
-                                                <input type='email' required placeholder='Napíšte Váš E-Mail *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
+                                                <input type='email' required placeholder='Napíšte Váš E-Mail *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
                                             </div>
                                             <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>
-                                                <input type='number' required placeholder='Napíšte Vaše telefónne číslo *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
+                                                <input type='number' required placeholder='Napíšte Vaše telefónne číslo *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
                                             </div>
                                             <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>
-                                                <input type='email' required placeholder='Napíšte názov Vašej web stránky www. *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
+                                                <input type='email' required placeholder='Napíšte názov Vašej web stránky www. *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
                                             </div>
                                             <div className='flex items-center gap-3 mt-2.5 md:mt-4'>
                                                 <input id='ochranu' type='checkbox' />
-                                                <label htmlFor='ochranu' className='text-[10px] md:text-xs lg:text-sm text-grey-400'> Potvrdzujem <span className='underline cursor-pointer' onClick={openGdpr} >ochranu osobných údajov</span></label>
+                                                <label htmlFor='ochranu' className='text-[12px] md:text-xs lg:text-sm text-grey-400'> Potvrdzujem <span className='underline cursor-pointer' onClick={openGdpr} >ochranu osobných údajov</span></label>
                                                 {open && <GdprModal open={open} closeGdpr={closeGdpr} />}
                                             </div>
                                             <div className='mt-6'>
-                                                <p className='text-[10px] md:text-xs lg:text-sm  leading-3 md:leading-5 font-semibold'><span className='underline '>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI</span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
+                                                <p className='text-[12px] md:text-xs lg:text-sm  leading-3 md:leading-5 font-semibold'><span className='underline '>Stiahnutím E-Booku automaticky získavate konzultáciu ohľadne AI</span> pre vašu firemnú web stránku, alebo E-Shop od nášho odborníka na umelú inteligenciu.</p>
                                             </div>
                                             <button
                                                 onClick={handelSteps}
@@ -232,15 +232,15 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                     <br />
                                                     na Váš email
                                                 </Dialog.Title>
-                                                <p className='mt-4  text-[10px] md:text-sm lg:text-base'>Spolu s E-Bookum <span className='font-semibold'>ste získali ZDARMA 30 min konzultáciu s našim odborníkon na umelú inteligenciu.</span> Náš AI odborník Vás bude čoskoro kontaktovať.</p>
+                                                <p className='mt-4  text-[12px] md:text-sm lg:text-base'>Spolu s E-Bookum <span className='font-semibold'>ste získali ZDARMA 30 min konzultáciu s našim odborníkon na umelú inteligenciu.</span> Náš AI odborník Vás bude čoskoro kontaktovať.</p>
 
                                                 <a
                                                     href='https://gchat.sk/'
                                                     target='_blank'
-                                                    className='text-white font-semibold rounded-md text-[11px] md:text-sm lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                    className='text-white font-semibold rounded-md text-[12px] md:text-sm lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     G CHAT - AI pre web stránky
                                                 </a>
-                                                <p className='mt-2.5 lg:mt-5 flex items-start text-[10px] md:text-sm lg:text-sm'>
+                                                <p className='mt-2.5 lg:mt-5 flex items-start text-[12px] md:text-sm lg:text-sm'>
                                                     Naprogramovala spoločnosť <a target='_blank' href='https://www.wavenet.sk' className='ml-1 font-semibold'> WaveNet</a>
                                                 </p>
                                             </Dialog.Panel>

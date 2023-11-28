@@ -92,7 +92,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                     </Transition.Child>
 
                     <div className="fixed inset-0 overflow-y-auto ">
-                        <div className=" flex min-h-full items-center justify-center text-center">
+                        <div className=" flex min-h-full items-center justify-center text-center mx-8 ">
                             <Transition.Child
 
                                 enter="ease-out duration-300"
@@ -106,7 +106,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
                                 {steps === 1 ?
                                     <>
-                                        <Dialog.Panel className="w-full h-[442px] lg:h-[606px] max-w-[267px] md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-left align-middle shadow-xl transition-all text-grey-100 relative">
+                                        <Dialog.Panel className="w-full  md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-left align-middle shadow-xl transition-all text-grey-100 relative">
                                             <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
                                                 <Close onClick={closeModal} />
                                             </div>
@@ -118,20 +118,20 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                             </Dialog.Title>
 
                                             <div className="md:my-3">
-                                                <p className="text-[8px] md:text-sm lg:text-base">
+                                                <p className="text-[11px] md:text-sm lg:text-base">
                                                     Pre stiahnutie E-Booku <span className='underline font-semibold'>ZDARMA</span> ,<span className='font-semibold'>vyplňte nesledujúce údaje:</span>
                                                 </p>
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-2.5 h-8 lg:h-[52px] w-full'>
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-2.5 h-[52px] w-full'>
                                                 <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 w-full' />
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-8 lg:h-[52px] w-full'>
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>
                                                 <input type='email' required placeholder='Napíšte Váš E-Mail *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 w-full' />
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-8 lg:h-[52px] w-full'>
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>
                                                 <input type='number' required placeholder='Napíšte Vaše telefónne číslo *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 w-full' />
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-8 lg:h-[52px] w-full'>
+                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>
                                                 <input type='email' required placeholder='Napíšte názov Vašej web stránky www. *' className='text-[10px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 w-full' />
                                             </div>
                                             <div className='flex items-center gap-3 mt-2.5 md:mt-4'>

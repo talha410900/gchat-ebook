@@ -38,7 +38,7 @@ function GChat() {
                 s cieľom rozšíriť vaše obzory využitia AI na Web stránkach a E-Shopoch.
               </p>
               <div className='flex flex-col xl:flex-row items-center lg:gap-10'>
-                <button onClick={openModal} className='text-white text-lg font-semibold flex items-center gap-4 rounded-[100px] bg-green button-shadow px-11 py-4 lg:py-6'>
+                <button onClick={openModal} className='text-white text-lg font-bold flex items-center gap-4 rounded-[100px] bg-green button-shadow px-11 py-4 lg:py-6'>
                   Stiahnuť E-Book <Arrow />
                 </button>
                 <div className='text-white/60 flex items-start mt-2.5 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
@@ -52,7 +52,7 @@ function GChat() {
               </div>
             </div>
             <div className='mt-11 md:mt-14  px-9 md:px-0 order-first md:order-last'>
-              <Image src='/images/ebook.png' width={700} height={800} className=' w-[250px] h-[285px] md:w-[600px] lg:[650px] xl:w-[700px] md:h-[600px] lg:h-full object-cover' />
+              <Image src='/images/ebook.png' width={700} height={800} className=' w-[250px] h-[285px] md:w-[600px] lg:[650px] xl:w-[700px] md:h-[600px] md:ml-12 lg:h-full object-cover' />
             </div>
           </div>
         </div>

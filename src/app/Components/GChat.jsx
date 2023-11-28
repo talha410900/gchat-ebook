@@ -41,7 +41,7 @@ function GChat() {
                 <button onClick={openModal} className='text-white text-2xl font-bold flex items-center gap-4 rounded-[100px] bg-green button-shadow px-11 py-4 lg:py-6'>
                   Stiahnuť E-Book <Arrow />
                 </button>
-                <div className='text-white/60 flex items-start mt-2.5 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
+                <div className='text-white/60 flex items-start mt-3 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
                   <Download />
                   <div className='flex flex-col items-start'>
                     <p className='text-sm lg:text-base font-bold'> Už stiahnutých E-Bookov</p>

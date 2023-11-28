@@ -30,7 +30,7 @@ function GChat() {
                 <br />
                 na vašej web stránke?
               </h1>
-              <p className='text-[12px] md:text-sm lg:text-base text-center md:text-start text-white/80 leading-4 lg:leading-8 font-inter  md:mx-0  mt-2.5 lg:mt-5 mb-6 lg:mb-12'>
+              <p className='text-[12px] md:text-sm lg:text-base text-center md:text-start text-white/80 leading-4 lg:leading-8 font-inter  md:mx-0  mt-2.5 lg:mt-5 mb-3.5 lg:mb-12'>
                 Tím odborníkov z projektu
                 <span className='font-bold'> G CHAT </span>
                 na umelú inteligenciu pripravil pre všetkých podnikateľov

@@ -207,7 +207,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 </div>
                                                 <button
                                                     onClick={handelSteps}
-                                                    className='text-white rounded-md text-sm lg:text-lg flex justify-center font-semibold items-center gap-2 mt-2 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                    className='text-white rounded-md text-md lg:text-lg flex justify-center font-semibold items-center gap-2 mt-2 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     Overiť <UserCheck />
                                                 </button>
                                                 <button className='mt-4 lg:mt-7 w-full text-[10px] md:text-sm lg:text-base'>
@@ -237,7 +237,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 <a
                                                     href='https://gchat.sk/'
                                                     target='_blank'
-                                                    className='text-white font-semibold rounded-md text-[12px] md:text-sm lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
+                                                    className='text-white font-semibold rounded-md text-md md:text-sm lg:text-lg flex justify-center items-center gap-2 mt-4 lg:mt-6 bg-green button-shadow px-7 py-3.5 w-full'>
                                                     G CHAT - AI pre web stránky
                                                 </a>
                                                 <p className='mt-2.5 lg:mt-5 flex items-start text-[12px] md:text-sm lg:text-sm'>

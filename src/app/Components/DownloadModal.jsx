@@ -34,9 +34,9 @@ export default function DownloadModal({ isOpen, closeModal }) {
             closeModal();
         }
     }
-// function stepBack(){
-//     setSteps(curent => curent -1 )
-// }
+function stepBack(){
+    setSteps(curent => curent -1 )
+}
     return (
         <>
 
@@ -72,7 +72,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                     <>
                                         <Dialog.Panel className="w-full h-[442px] lg:h-[606px] max-w-[267px] md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-5 pt-2 lg:p-8 text-left align-middle shadow-xl transition-all text-gray-100 relative">
                                             <div className='absolute right-2 top-1' >
-                                                <Close />
+                                                <Close onClick={closeModal} />
                                             </div>
                                             <Dialog.Title
                                                 as="h3"
@@ -118,7 +118,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                         <>
                                             <Dialog.Panel className="w-full h-[226px] lg:h-[369px] max-w-[267px] md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-2xl bg-white px-4 pb-3.5 pt-2.5 lg:p-8 text-center align-middle shadow-xl transition-all text-gray-100 relative">
                                                 <div className='absolute right-2 lg:right-3 top-1 lg:top-4' >
-                                                    <Close />
+                                                    <Close onClick={stepBack}/>
                                                 </div>
                                                 <Dialog.Title
                                                     as="h3"

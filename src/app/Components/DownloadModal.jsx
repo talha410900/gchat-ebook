@@ -24,7 +24,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
 
     const [steps, setSteps] = React.useState(1);
-    
+
     function handelSteps() {
         if (steps === 1) {
             setSteps(prev => prev + 1);
@@ -205,8 +205,6 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                             className='border-none outline-none  bg-grey-600 w-10 border-2 border-grey-700 shadow-inner rounded-lg lg:w-[54px] h-[42px] lg:h-[57px] p-4 text-2xl font-bold text-center ' />
                                                     </div>
                                                 </div>
-
-
                                                 <button
                                                     onClick={handelSteps}
                                                     className='text-white rounded-md text-sm lg:text-lg flex justify-center font-semibold items-center gap-2 mt-2 lg:mt-4 bg-green button-shadow px-7 py-3.5 w-full'>
@@ -239,12 +237,11 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                     G CHAT - AI pre web stránky
                                                 </button>
                                                 <p className='mt-2.5 lg:mt-5 flex items-start text-[8px] md:text-sm lg:text-sm'>
-                                                    Naprogramovala spoločnosť <Link href='https://www.wavenet.sk' className='ml-1 font-semibold'> WaveNet</Link>
+                                                    Naprogramovala spoločnosť <a target='_blank' href='https://www.wavenet.sk' className='ml-1 font-semibold'> WaveNet</a>
                                                 </p>
                                             </Dialog.Panel>
                                         </>
                                 }
-
                             </Transition.Child>
                         </div>
                     </div>

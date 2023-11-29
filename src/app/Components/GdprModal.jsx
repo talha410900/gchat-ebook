@@ -36,8 +36,8 @@ function GdprModal({ open, closeGdpr }) {
 
                 backdropFilter: 'blur(3px)',
               }} >
-                <Dialog.Panel className="w-full h-[378px] md:h-[400px] lg:h-[415px] overflow-y-auto md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-t-2xl bg-white px-4 pb-5 pt-2 lg:pl-8 lg:pt-7 lg:pr-1.5 lg:pb-8  text-left align-middle shadow-xl transition-all text-grey-100 relative">
-                  <div className='sticky left-2 top-0 w-full flex justify-end ' >
+                <Dialog.Panel className="w-full h-[378px] md:h-[400px] lg:h-[415px] overflow-y-auto md:max-w-[500px] lg:max-w-[624px] transform overflow-hidden rounded-t-2xl bg-white px-4 pb-5 pt-2 lg:p-8  text-left align-middle shadow-xl transition-all text-grey-100 relative">
+                  <div className='absolute right-2 lg:right-3 top-2 lg:top-4 w-full flex justify-end ' >
                     <Close onClick={closeGdpr} />
                   </div>
                   <Dialog.Title

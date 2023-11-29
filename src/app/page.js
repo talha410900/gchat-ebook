@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <>
       <GChat
-        count={0}
+        count={2}
       />
     </>
   )

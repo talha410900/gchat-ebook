@@ -47,7 +47,7 @@ function GChat({count}) {
                   <Download />
                   <div className='flex flex-col items-start'>
                     <p className='text-sm lg:text-base font-bold'> Už stiahnutých E-Bookov</p>
-                    <p className='text-[27px] lg:text-3xl font-semibold text-white'>234 ks</p>
+                    <p className='text-[27px] lg:text-3xl font-semibold text-white'>{count} ks</p>
                   </div>
                 </div>
                 {isOpen && <DownloadModal isOpen={isOpen} closeModal={closeModal} />}

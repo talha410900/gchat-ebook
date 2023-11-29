@@ -29,7 +29,7 @@ export async function POST(request) {
     });
 
       await transporter.sendMail({
-        from: process.env.EMAIL,
+        from: 'ebook@gchat.sk',
         to: email,
         subject: 'Download Your eBook',
         text: 'Thank you for verifying your email. You can download your eBook from the following link: [Download Link]',

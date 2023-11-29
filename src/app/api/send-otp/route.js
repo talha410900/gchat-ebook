@@ -63,7 +63,7 @@ export async function POST(request) {
   // Send email
   try {
     await transporter.sendMail({
-      from: process.env.EMAIL,
+      from: 'ebook@gchat.sk',
       to: email,
       subject: 'Your OTP',
       text: `Your OTP is: ${otp}`

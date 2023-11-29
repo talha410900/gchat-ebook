@@ -32,7 +32,7 @@ function GdprModal({ open, closeGdpr }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className='h-[624px] bg-white/10 rounded-xl'  onClick={closeGdpr}  style={{
+              <div className='h-[580px] md:h-[615px] bg-white/10 rounded-xl'  onClick={closeGdpr}  style={{
 
                 backdropFilter: 'blur(3px)',
               }} >

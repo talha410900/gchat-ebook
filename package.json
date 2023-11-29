@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "axios": "^1.6.2",
+    "mongodb": "^6.3.0",
     "next": "14.0.2",
+    "nodemailer": "^6.9.7",
     "react": "^18",
     "react-dom": "^18"
   },

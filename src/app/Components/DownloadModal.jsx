@@ -123,10 +123,10 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 </p>
                                             </div>
                                             <div >
-                                                <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-2.5 h-[52px] w-full'>
+                                                <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-2.5 h-[52px] w-full relative'>
                                                     <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
                                                 </div>
-                                                <p className='text-end text-[10px] md:text-xs font-semibold'>Váš email bude overovaný</p>
+                                                <p className='text-end text-[10px] md:text-xs font-semibold text-[#00ac43] my-0 absolute right-8'>Váš email bude overovaný</p>
                                             </div>
 
                                             <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>

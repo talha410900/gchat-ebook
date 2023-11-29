@@ -38,10 +38,10 @@ function GChat() {
                 s cieľom rozšíriť vaše obzory využitia AI na Web stránkach a E-Shopoch.
               </p>
               <div className='flex flex-col xl:flex-row items-center lg:gap-10'>
-                <button onClick={openModal} className='text-white text-2xl font-bold flex items-center gap-4 rounded-[100px] bg-green button-shadow px-11 py-4 lg:py-6'>
+                <button onClick={openModal} className='text-white text-2xl font-bold flex  justify-center items-center gap-3 rounded-[100px] bg-green button-shadow px-9 xl:px-7 py-4 lg:py-6 min-w-[295px]'>
                   Stiahnuť E-Book <Arrow />
                 </button>
-                <div className='text-white/60 flex items-start mt-3.5 md:mt-8 lg:mt-0 gap-3 lg:gap-8'>
+                <div className='text-white/60 flex items-start mt-3.5 md:mt-8 lg:mt-0 gap-3 lg:gap-5 min-w-[241px]'>
                   <Download />
                   <div className='flex flex-col items-start'>
                     <p className='text-sm lg:text-base font-bold'> Už stiahnutých E-Bookov</p>

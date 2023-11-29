@@ -119,12 +119,16 @@ export default function DownloadModal({ isOpen, closeModal }) {
 
                                             <div className="md:my-3">
                                                 <p className="text-[12px] md:text-sm lg:text-base">
-                                                    Pre stiahnutie E-Booku <span className='underline font-semibold'>ZDARMA</span> ,<span className='font-semibold'>vyplňte nesledujúce údaje:</span>
+                                                    Pre stiahnutie E-Booku <span className='underline font-semibold'>ZDARMA</span>,<span className='font-semibold'>vyplňte nesledujúce údaje:</span>
                                                 </p>
                                             </div>
-                                            <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-2.5 h-[52px] w-full'>
-                                                <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
+                                            <div >
+                                                <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-2.5 h-[52px] w-full'>
+                                                    <input type='email' required placeholder='Napíšte Vaše celé meno *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
+                                                </div>
+                                                <p className='text-end text-[10px] md:text-xs font-semibold'>Váš email bude overovaný</p>
                                             </div>
+
                                             <div className='flex gap-2 border border-x-0 border-t-0 border-b-grey-200 items-center mt-4 h-[52px] w-full'>
                                                 <input type='email' required placeholder='Napíšte Váš E-Mail *' className='text-[14px] md:text-xs lg:text-base border-none outline-none placeholder:text-grey-200 placeholder:text-md w-full' />
                                             </div>
@@ -162,7 +166,7 @@ export default function DownloadModal({ isOpen, closeModal }) {
                                                 >
                                                     Verifikácia E-Mailu
                                                 </Dialog.Title>
-                                                <p className='lg:mt-3 lg:pb-4 text-[10px] md:text-sm lg:text-base'> Na Váš zadaný E-Mail <span className='underline'> bol zaslaný 4 číselný verifikačný kód.</span></p>
+                                                <p className='lg:mt-3 lg:pb-4 text-[10px] md:text-sm lg:text-base'> Na Váš zadaný E-Mail <span className='underline'> bol poslaný 4 číselný verifikačný kód.</span></p>
 
                                                 <div className='mt-4 md:mt-5 flex flex-row justify-center items-center gap-2 lg:gap-3 px-8 md:px-0 '>
                                                     <div className=''>

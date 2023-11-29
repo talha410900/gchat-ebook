@@ -5,7 +5,7 @@ import Arrow from '../../../Icons/Arrow'
 import Download from '../../../Icons/Download'
 import DownloadModal from './DownloadModal'
 
-function GChat() {
+function GChat({count}) {
   const [isOpen, setIsOpen] = React.useState(false)
 
   function closeModal() {
@@ -15,6 +15,8 @@ function GChat() {
   function openModal() {
     setIsOpen(true)
   }
+
+
   return (
     <>
 

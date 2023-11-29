@@ -17,6 +17,16 @@ export async function POST(request) {
      // OTP verified, now remove it from the database
      await db.collection('otps').deleteOne({ email });
 
+     const stats = await db.collection('downloadStats').findOne({ identifier: 'ebook_download_count' });
+     
+     if (stats) {
+       await db.collection('downloadStats').updateOne(
+         { identifier: 'ebook_download_count' },
+         { $inc: { count: 1 } }
+       );
+     } else {
+       await db.collection('downloadStats').insertOne({ identifier: 'ebook_download_count', count: 1 });
+     }
          // Send eBook download email
     const transporter = nodemailer.createTransport({
       host: 'smtp.websupport.sk',

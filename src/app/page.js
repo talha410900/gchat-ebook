@@ -1,7 +1,7 @@
 
 import GChat from './Components/GChat'
 
-export const revalidate = 30
+export const revalidate = 15
 
 export default async function Home() {
 
